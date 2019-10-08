@@ -18,7 +18,8 @@ from django.contrib import admin
 from ask.qa.views import test
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),\
+    # r'^login/', include('qa.urls')
     url(r'^$', )
     url(r'^login/', )
     url(r'^signup/', )
