@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^$', )
     url(r'^login/', )
     url(r'^signup/', )
-    url(r'^question/100/', )
+    url(r'^question/[0-9]+/', )
     url(r'^ask/', )
     url(r'^popular/', )
     url(r'^new/', )
