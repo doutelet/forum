@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-
+"""
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', include('qa.urls')),
@@ -24,4 +24,14 @@ urlpatterns = [
     url(r'^ask/', include('qa.urls')),
     url(r'^popular/', include('qa.urls')),
     url(r'^new/', include('qa.urls')),
+]
+"""
+urlpatterns = [
+    url(r'^admin/', admin.site.urls),
+    url(r'^login/', include('ask.qa.urls')),
+    url(r'^signup/', include('ask.qa.urls')),
+    url(r'^question/[0-9]+/', include('ask.qa.urls')),
+    url(r'^ask/', include('ask.qa.urls')),
+    url(r'^popular/', include('ask.qa.urls')),
+    url(r'^new/', include('ask.qa.urls')),
 ]
